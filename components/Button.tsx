@@ -1,3 +1,4 @@
+import { dmSansFont } from "@/fonts/fonts";
 
 interface ButtonProps{
     text: string;
@@ -17,7 +18,7 @@ const variantClasses = {
     "tertiary": "bg-tertiary-orange"
 }
 
-const defaultClasses = "rounded-full font-semibold";
+const defaultClasses = `rounded-full font-semibold ${dmSansFont.className}`;
 
 export default function Button({text, size, variant}: ButtonProps){
 

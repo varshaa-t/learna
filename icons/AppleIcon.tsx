@@ -1,6 +1,6 @@
 import { LiaApple } from "react-icons/lia";
 
-export default function Apple(){
+export default function AppleIcon(){
 
     return (
         <LiaApple size={40}/>
