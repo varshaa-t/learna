@@ -16,12 +16,18 @@ export default function Navbar(){
                 />  
             </Link>
             <div className="flex items-center space-x-6">
-                <div className="font-semibold">Home</div>
-                <Button
-                    text="Get a Demo"
-                    size="md"
-                    variant="secondary"
-                />
+                <Link href={'/'}>
+                    <div className="font-semibold">
+                        Home
+                    </div>
+                </Link>
+                <Link href={'/demo'}>
+                    <Button
+                        text="Get a Demo"
+                        size="md"
+                        variant="secondary"
+                    />
+                </Link>
             </div>
         </div>
     )

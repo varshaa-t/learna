@@ -2,14 +2,15 @@ import { dmSansFont } from "@/fonts/fonts";
 
 interface ButtonProps{
     text: string;
-    size: "sm" | "md" | "lg";
+    size: "sm" | "md" | "lg" | "xl";
     variant: "primary" | "secondary" | "tertiary";
 }
 
 const sizeClasses = {
     "sm": "w-20 p-2",
     "md": "w-40 px-4 py-6",
-    "lg": "w-56 py-8 text-xl"
+    "lg": "w-48 py-9 font-extrabold tracking-tighter text-2xl",
+    "xl": "w-56 py-8 text-xl"
 }
 
 const variantClasses = {
@@ -18,7 +19,7 @@ const variantClasses = {
     "tertiary": "bg-tertiary-orange"
 }
 
-const defaultClasses = `rounded-full font-semibold ${dmSansFont.className}`;
+const defaultClasses = `rounded-full font-semibold hover:bg-opacity-80 ${dmSansFont.className}`;
 
 export default function Button({text, size, variant}: ButtonProps){
 

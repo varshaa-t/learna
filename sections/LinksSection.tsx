@@ -5,6 +5,7 @@ import { manropeFont } from "@/fonts/fonts";
 import AppleIcon from "@/icons/AppleIcon";
 import GooglePlayIcon from "@/icons/GooglePlayIcon";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function LinksSection(){
 
@@ -24,11 +25,13 @@ export default function LinksSection(){
                         Learn better,
                         work better.
                     </div>
-                    <Button
-                        text="Get a Demo"
-                        size="lg"
-                        variant="primary"
-                    />
+                    <Link href={'/demo'}>
+                        <Button
+                            text="Get a Demo"
+                            size="xl"
+                            variant="primary"
+                        />
+                    </Link>
                     <div className="flex space-x-2 pt-10">
                         <StoreButton
                             icon={<AppleIcon/>}

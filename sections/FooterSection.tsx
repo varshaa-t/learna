@@ -36,13 +36,13 @@ export default function FooterSection(){
                         />
                     </div>
                 </div>
-                <div>
+                <Link href={'/demo'}>
                     <Button
                         text="Get a Demo"
-                        size="lg"
+                        size="xl"
                         variant="secondary"
                     />
-                </div>
+                </Link>
             </div>
         </div>
     )

@@ -4,6 +4,7 @@ import AppleIcon from "@/icons/AppleIcon";
 import GooglePlayIcon from "@/icons/GooglePlayIcon";
 import Image from "next/image";
 import { dmSansFont, manropeFont } from "@/fonts/fonts";
+import Link from "next/link";
 
 export default function HeroSection(){
 
@@ -14,11 +15,13 @@ export default function HeroSection(){
                     <div className={`text-[65px] w-[500px] ${manropeFont.className}`}>Work smarter, not harder</div>
                     <div className={`w-[500px] text-xl tracking-wide font-semibold ${dmSansFont.className}`}>Learna is a microlearning app designed to transform how people learn, grow and engage at work. Focused on the most in-demand soft skills and supported by actionable insights, Learna makes it simple to build a future-fit workforce.</div>
                 </div>
-                <Button
-                    text="Get a Demo"
-                    size="lg"
-                    variant="primary"
-                />
+                <Link href={'/demo'}>
+                    <Button
+                        text="Get a Demo"
+                        size="xl"
+                        variant="primary"
+                    />
+                </Link>
             </div>
             <div>
                 <Image
