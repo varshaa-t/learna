@@ -8,7 +8,7 @@ import { dmSansFont, manropeFont } from "@/fonts/fonts";
 export default function HeroSection(){
 
     return (
-        <div className="bg-tertiary-orange flex items-end justify-between pl-36 pr-20 pb-44">
+        <div className="bg-tertiary-orange flex items-end justify-between pl-36 pt-14 pr-20 pb-44">
             <div className="flex flex-col justify-between space-y-20">
                 <div className="flex flex-col space-y-16">
                     <div className={`text-[65px] w-[500px] ${manropeFont.className}`}>Work smarter, not harder</div>
