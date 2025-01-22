@@ -1,3 +1,4 @@
+import { dmSansFont } from "@/fonts/fonts";
 
 interface BulletPointProps{
     text: string;
@@ -6,9 +7,9 @@ interface BulletPointProps{
 export default function BulletPoint({text}: BulletPointProps){
 
     return (
-        <div className="w-[400px] flex space-x-2">
+        <div className="w-[480px] flex space-x-2 pl-10">
             <div>•</div> 
-            <div>{text}</div>
+            <div className={`${dmSansFont.className} text-[17px] font-semibold`}>{text}</div>
         </div>
     )
 }

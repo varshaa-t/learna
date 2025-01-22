@@ -25,7 +25,7 @@ export default function HeroSection(){
                     src={"https://images.squarespace-cdn.com/content/v1/63560ba563f3f90767df932c/774c0669-a9de-4d04-9218-48b9e7bb7370/Learna+Hero.png?format=1500w"}
                     alt="explore-section-on-app"
                     width={670}
-                    height={1000}
+                    height={633}
                 />
             </div>
             <div className="absolute top-[900px] flex space-x-4">

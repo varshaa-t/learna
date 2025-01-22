@@ -16,7 +16,7 @@ export default {
         "secondary-orange": "#ec9063",
         "tertiary-orange": "#ffc2a8",
         "primary-green": "#b0cdb8",
-        "light-peach": "#f5ede3" 
+        "light-peach": "#f5ede3",
       },
     },
   },

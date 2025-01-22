@@ -1,9 +1,9 @@
 
 import { GrMailOption } from "react-icons/gr";
 
-export default function Mail(){
+export default function MailIcon(){
 
     return(
-        <GrMailOption/>
+        <GrMailOption size={24}/>
     )
 }

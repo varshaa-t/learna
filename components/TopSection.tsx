@@ -17,8 +17,8 @@ const titleClasses = {
 }
 
 const textClasses = {
-    "left": "w-[500px]",
-    "center": "w-[765px]"
+    "left": "w-[470px]",
+    "center": "w-[725px]"
 }
 
 export default function TopSection({title, text, variant}: TopSectionProps){
@@ -26,7 +26,7 @@ export default function TopSection({title, text, variant}: TopSectionProps){
     return (
         <div className={`${variantClasses[variant]} flex flex-col space-y-4`}>
             <div className={`text-[44px] ${titleClasses[variant]} ${manropeFont.className}`}>{title}</div>
-            <div className={`text-lg font-semibold tracking-tight ${textClasses[variant]} ${dmSansFont.className}`}>{text}</div>
+            <div className={`text-[17px] font-semibold tracking-tight ${textClasses[variant]} ${dmSansFont.className}`}>{text}</div>
         </div>
     )
 }
