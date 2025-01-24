@@ -4,6 +4,7 @@ interface ButtonProps{
     text: string;
     size: "sm" | "md" | "lg" | "xl";
     variant: "primary" | "secondary" | "tertiary";
+    type?: "submit";
 }
 
 const sizeClasses = {
@@ -21,10 +22,10 @@ const variantClasses = {
 
 const defaultClasses = `rounded-full font-semibold hover:bg-opacity-80 ${dmSansFont.className}`;
 
-export default function Button({text, size, variant}: ButtonProps){
+export default function Button({text, size, variant, type}: ButtonProps){
 
     return (
-        <button className={`${sizeClasses[size]} ${variantClasses[variant]} ${defaultClasses}`}>
+        <button type={type} className={`${sizeClasses[size]} ${variantClasses[variant]} ${defaultClasses}`}>
             {text}
         </button>
     )

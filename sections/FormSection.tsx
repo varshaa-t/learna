@@ -1,9 +1,5 @@
-import Button from "@/components/Button";
-import Input from "@/components/Input";
-import Label from "@/components/Label";
-import Option from "@/components/Option";
+import ContactForm from "@/components/ContactForm";
 import { dmSansFont, manropeFont } from "@/fonts/fonts";
-import DownArrowIcon from "@/icons/DownArrowIcon";
 import Image from "next/image";
 
 export default function FormSection(){
@@ -23,61 +19,7 @@ export default function FormSection(){
                     <div className={`${manropeFont.className} font-light text-[65px]`}>Get a Demo</div>
                     <div className={`${dmSansFont.className} text-xl tracking-wide font-semibold`}>See for yourself how Learna can create better workplaces by changing the way people learn.</div>
                 </div>
-                <div className="flex flex-col space-y-4 pb-5">
-                    <div className="flex flex-col space-y-2">
-                        <Label text="Name"/>
-                        <div className="flex space-x-3 justify-between">
-                            <div className="flex flex-col space-y-1">
-                                <label className="text-sm">First Name</label>
-                                <Input 
-                                    type="text"
-                                    size="sm"
-                                />
-                            </div>
-                            <div className="flex flex-col space-y-1">
-                                <label className="text-sm">Last Name</label>
-                                <Input 
-                                    type="text"
-                                    size="sm"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex flex-col space-y-1">
-                        <Label text="Email"/>
-                        <Input
-                            type="text"
-                            size="lg"
-                        />
-                    </div>
-                    <div className="flex flex-col space-y-1">
-                        <Label text="Company Name"/>
-                        <Input
-                            type="text"
-                            size="lg"
-                        />
-                    </div>
-                    <div className="flex flex-col space-y-1 relative">
-                        <Label text="How did you find out about us? "/>
-                        <select name="info" id="info" className="px-5 py-3 bg-tertiary-orange border-[1px] text-gray-500 font-semibold border-black outline-none focus:border-2 hover:border-2 appearance-none">
-                            <option className={`bg-white font-semibold text-gray-400 ${dmSansFont.className}`} value="Select an option" disabled>Select an option</option>
-                            <Option text="Instagram" value="Instagram"/>
-                            <Option text="LinkedIn" value="LinkedIn"/>
-                            <Option text="Facebook" value="Facebook"/>
-                            <Option text="Google Search" value="Google Search"/>
-                            <Option text="Word of Mouth" value="Word of Mouth"/>
-                            <Option text="Referral" value="Referral"/>
-                        </select>
-                        <DownArrowIcon styles="absolute right-4 top-2/3 transform -translate-y-1/2 pointer-events-none"/>
-                    </div>
-                </div>
-                <div>
-                    <Button
-                        text="Submit"
-                        size="lg"
-                        variant="primary"
-                    />
-                </div>
+                <ContactForm/>
             </div>
             <div>
                 <Image
