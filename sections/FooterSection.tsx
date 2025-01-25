@@ -39,7 +39,7 @@ export default function FooterSection(){
                 <Link href={'/demo'}>
                     <Button
                         text="Get a Demo"
-                        size="xl"
+                        size="2xl"
                         variant="secondary"
                     />
                 </Link>

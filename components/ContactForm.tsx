@@ -151,7 +151,7 @@ export default function ContactForm(){
                 <div className="mx-auto">
                     <Button
                         text="Submit"
-                        size="lg"
+                        size="2xl"
                         variant="primary"
                         type="submit"
                     />

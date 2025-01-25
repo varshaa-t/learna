@@ -28,7 +28,7 @@ export default function LinksSection(){
                     <Link href={'/demo'}>
                         <Button
                             text="Get a Demo"
-                            size="xl"
+                            size="2xl"
                             variant="primary"
                         />
                     </Link>

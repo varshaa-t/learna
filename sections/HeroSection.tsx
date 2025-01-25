@@ -18,7 +18,7 @@ export default function HeroSection(){
                 <Link href={'/demo'}>
                     <Button
                         text="Get a Demo"
-                        size="xl"
+                        size="2xl"
                         variant="primary"
                     />
                 </Link>

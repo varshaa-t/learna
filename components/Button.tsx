@@ -2,7 +2,7 @@ import { dmSansFont } from "@/fonts/fonts";
 
 interface ButtonProps{
     text: string;
-    size: "sm" | "md" | "lg" | "xl";
+    size: "sm" | "md" | "lg" | "xl" | "2xl";
     variant: "primary" | "secondary" | "tertiary";
     type?: "submit";
 }
@@ -10,8 +10,9 @@ interface ButtonProps{
 const sizeClasses = {
     "sm": "w-20 p-2",
     "md": "w-40 px-4 py-6",
-    "lg": "w-48 py-9 font-extrabold tracking-tighter text-2xl",
-    "xl": "w-56 py-8 text-xl"
+    "lg": "w-56 py-5 tracking-tighter text-lg",
+    "xl": "w-48 py-9 font-extrabold tracking-tighter text-2xl",
+    "2xl": "w-56 py-8 text-xl"
 }
 
 const variantClasses = {
