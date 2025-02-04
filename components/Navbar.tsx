@@ -6,7 +6,7 @@ import { dmSansFont } from "@/fonts/fonts";
 import Link from "next/link";
 import MenuIcon from "@/icons/MenuIcon";
 import CloseIcon from "@/icons/CloseIcon";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Navbar(){
 
@@ -16,18 +16,30 @@ export default function Navbar(){
         setIsOpen(!isOpen);
     }
 
+    useEffect(() => {
+        if (isOpen) {
+            document.body.classList.add("overflow-hidden");
+        } else {
+            document.body.classList.remove("overflow-hidden");
+        }
+
+        return () => {
+            document.body.classList.remove("overflow-hidden");
+        };
+    }, [isOpen]);
+
     return (
-        <nav className={`bg-tertiary-orange  ${dmSansFont.className}`}>
-            <div className={`hidden md:flex justify-between items-center px-12 pt-11`}>
+        <nav className={`bg-tertiary-orange ${dmSansFont.className}`}>
+            <div className={`hidden xl:flex justify-between items-center px-11 pt-11`}>
                 <Link href={"/"}>
                     <Image
                         src={"https://images.squarespace-cdn.com/content/v1/63560ba563f3f90767df932c/0dbe9630-e839-41f7-bcf7-1b57644c514d/Learna+Logo-Black.png?format=1500w"}
                         alt="logo"
-                        width={180}
-                        height={100}
+                        width={177}
+                        height={48}
                     />  
                 </Link>
-                <div className="hidden md:flex items-center space-x-6">
+                <div className="hidden xl:flex items-center space-x-6">
                     <Link href={'/'}>
                         <div className="font-semibold">
                             Home
@@ -43,17 +55,18 @@ export default function Navbar(){
                 </div>
             </div>
             {!isOpen && (
-                <div className="block relative md:hidden">
-                    <Link href={"/"} className="absolute top-7 sm:top-12 left-[35vw] sm:left-[40vw]">
-                        <Image
-                            src={"https://images.squarespace-cdn.com/content/v1/63560ba563f3f90767df932c/0dbe9630-e839-41f7-bcf7-1b57644c514d/Learna+Logo-Black.png?format=1500w"}
-                            alt="logo"
-                            width={120}
-                            height={100}
-                        />  
+                <div className="flex items-center justify-end pt-6 space-x-[19vw] px-6 sm:px-11 sm:space-x-[28vw] md:space-x-[28vw] sm:pt-10 md:pt-12 lg:pt-11 lg:space-x-[34vw] xl:hidden">
+                    <Link href={"/"}>
+                        <div className="w-[120px] md:w-auto md:h-auto">
+                            <Image
+                                src={"https://images.squarespace-cdn.com/content/v1/63560ba563f3f90767df932c/0dbe9630-e839-41f7-bcf7-1b57644c514d/Learna+Logo-Black.png?format=1500w"}
+                                alt="logo"
+                                width={177}
+                                height={48}
+                            />  
+                        </div>
                     </Link>
                     <button 
-                            className="block md:hidden absolute top-8 sm:top-12 right-8 sm:right-10"
                             onClick={toggleNavbar}
                         >
                             {isOpen ? <CloseIcon size={32}/> : <MenuIcon/>}
@@ -61,29 +74,29 @@ export default function Navbar(){
                 </div>
             )}
             {isOpen && (
-                <div className="block relative md:hidden bg-[#f5ede3] h-screen">
-                    <div>
-                        <Link href={"/"} className="absolute top-7 left-[35vw] sm:top-12 sm:left-[40vw]">
+                <div className="fixed inset-0 z-50 flex flex-col justify-between items-center xl:hidden bg-[#f5ede3] pt-11 px-11 pb-16">
+                    <div className="flex justify-end items-center">
+                        <Link href={"/"}>
                             <Image
                                 src={"https://images.squarespace-cdn.com/content/v1/63560ba563f3f90767df932c/0dbe9630-e839-41f7-bcf7-1b57644c514d/Learna+Logo-Black.png?format=1500w"}
                                 alt="logo"
-                                width={120}
-                                height={100}
+                                width={177}
+                                height={48}
                             />  
                         </Link>
                         <button 
                             onClick={toggleNavbar}
-                            className="block md:hidden absolute top-8 right-8 sm:top-12 sm:right-10"
+                            className="block xl:hidden absolute top-8 right-8 sm:top-12 sm:right-10"
                         >
                             {isOpen ? <CloseIcon size={28}/> : <MenuIcon/>}
                         </button>
                     </div>
-                    <Link href={'/'} className="absolute top-[45vh] left-[44vw]">
+                    <Link href={'/'}>
                         <div className="text-2xl tracking-tighter">
                             Home
                         </div>
                     </Link>
-                    <Link href={'/demo'} className="absolute bottom-10 left-[25vw] sm:left-[33vw]">
+                    <Link href={'/demo'}>
                         <Button
                             text="Get a Demo"
                             size="lg"

@@ -2,6 +2,6 @@ import { FaGooglePlay } from "react-icons/fa";
 
 export default function GooglePlayIcon(){
     return(
-        <FaGooglePlay size={30}/>
+        <FaGooglePlay className="text-2xl sm:text-5xl md:text-xl xl:text-2xl 2xl:text-3xl"/>
     )
 }
