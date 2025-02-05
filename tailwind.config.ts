@@ -19,6 +19,9 @@ export default {
         "primary-green": "#b0cdb8",
         "light-peach": "#f5ede3",
       },
+      screens: {
+        'xs': '500px'
+      }
     },
   },
   plugins: [],
