@@ -20,7 +20,8 @@ export default {
         "light-peach": "#f5ede3",
       },
       screens: {
-        'xs': '500px'
+        'xs': '500px',
+        '2xs': '370px'
       }
     },
   },
