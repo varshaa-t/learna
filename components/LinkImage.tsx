@@ -8,13 +8,13 @@ interface LinkImageProps{
 export default function LinkImage({src, alt}: LinkImageProps){
 
     return (
-        <div className="h-[36vh]">
+        <div>
             <Image
                 src={src}
                 alt={alt}
-                width={1}
-                height={1}
-                layout="responsive"
+                width={256}
+                height={257}
+                className="h-auto w-full md:w-[340px] lg:w-full" 
             />
         </div>
     )
