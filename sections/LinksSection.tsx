@@ -12,10 +12,10 @@ export default function LinksSection(){
     return (
         <div>
             <div className="bg-tertiary-orange">
-                <div className="flex justify-between items-center pl-10 xs:pl-[10vw] pb-16 sm:pl-16 sm:pb-14 md:pl-5 md:pr-10 md:pb-10 lg:pb-0">
+                <div className="flex justify-between items-center pl-10 pb-16 xs:pl-[12vw] sm:pl-[10vw] sm:pb-14 md:pl-5 md:pr-10 md:pb-10 lg:pb-0">
                     <div className="hidden md:block">
                         <Image
-                            src={"https://images.squarespace-cdn.com/content/v1/63560ba563f3f90767df932c/186d8da8-0cb3-4b89-ad90-0375b3067e10/CTA_Left.png?format=1000w"}
+                            src={"/images/links-section-1.png"}
                             alt="people-img-1"
                             width={350}
                             height={350}
@@ -34,7 +34,7 @@ export default function LinksSection(){
                                 variant="primary"
                             />
                         </Link>
-                        <div className="flex pt-10 space-x-3 md:space-x-2 lg:space-x-3 2xl:space-x-2">
+                        <div className="flex pt-10 space-x-3 pb-12 md:space-x-2 lg:space-x-3 xl:pb-0 2xl:space-x-2">
                             <StoreButton
                                 icon={<AppleIcon/>}
                                 textOne="GET IT ON"
@@ -49,7 +49,7 @@ export default function LinksSection(){
                     </div>
                     <div className="hidden md:block">
                         <Image
-                            src={"https://images.squarespace-cdn.com/content/v1/63560ba563f3f90767df932c/b33701e0-d921-4a09-bdd3-4fe6ef527d5b/CTA_Right.png?format=1000w"}
+                            src={"/images/links-section-2.png"}
                             alt="people-img-2"
                             width={350}
                             height={350}
@@ -60,27 +60,27 @@ export default function LinksSection(){
             </div>
             <div className="bg-tertiary-orange grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 place-items-end w-full">
                 <LinkImage
-                    src="https://images.squarespace-cdn.com/content/v1/63560ba563f3f90767df932c/003f04b1-aafd-4ff4-81da-6f5f4924ec9c/Screen+Shot+2022-11-04+at+4.59.49+pm.png?format=750w"
+                    src="/images/links-section-3.png"
                     alt="img-1"
                 />
                 <LinkImage
-                    src="https://images.squarespace-cdn.com/content/v1/63560ba563f3f90767df932c/f8862555-2ef2-4429-8f59-36de3438810f/ImageLearna.png?format=750w"
+                    src="/images/links-section-4.png"
                     alt="img-2"
                 />
                 <LinkImage
-                    src="https://images.squarespace-cdn.com/content/v1/63560ba563f3f90767df932c/c426596c-1aed-406f-81ae-ea9e3b51bc52/1.png?format=750w"
+                    src="/images/links-section-5.png"
                     alt="img-3"
                 />
                 <LinkImage
-                    src="https://images.squarespace-cdn.com/content/v1/63560ba563f3f90767df932c/05f48363-8596-41d3-8626-352f6b7f64a1/2.png?format=750w"
+                    src="/images/links-section-6.png"
                     alt="img-4"
                 />
                 <LinkImage
-                    src="https://images.squarespace-cdn.com/content/v1/63560ba563f3f90767df932c/4bada9c7-679c-4e4f-b9b9-b4cdf7ef7e44/Screen+Shot+2022-11-04+at+4.59.40+pm.png?format=750w"
+                    src="/images/links-section-7.png"
                     alt="img-5"
                 />
                 <LinkImage
-                    src="https://images.squarespace-cdn.com/content/v1/63560ba563f3f90767df932c/cb64fc01-9666-43fa-a1db-d9820ec2b9c8/Get+A+Demo.png?format=750w"
+                    src="/images/links-section-8.png"
                     alt="img-6"
                 />
             </div>

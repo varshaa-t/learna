@@ -33,7 +33,7 @@ export default function Navbar(){
             <div className={`hidden xl:flex justify-between items-center px-11 pt-11`}>
                 <Link href={"/"}>
                     <Image
-                        src={"/images/navbar-logo.png"}
+                        src={"/images/logo.png"}
                         alt="logo"
                         width={177}
                         height={48}
@@ -59,7 +59,7 @@ export default function Navbar(){
                     <Link href={"/"}>
                         <div className="w-[120px] md:w-auto md:h-auto">
                             <Image
-                                src={"/images/navbar-logo.png"}
+                                src={"/images/logo.png"}
                                 alt="logo"
                                 width={177}
                                 height={48}
@@ -78,7 +78,7 @@ export default function Navbar(){
                     <div className="flex justify-end items-center">
                         <Link href={"/"}>
                             <Image
-                                src={"/images/navbar-logo.png"}
+                                src={"/images/logo.png"}
                                 alt="logo"
                                 width={177}
                                 height={48}

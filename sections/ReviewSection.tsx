@@ -7,12 +7,12 @@ import Image from "next/image";
 export default function ReviewSection(){
 
     return (
-        <div className="bg-light-peach h-full flex flex-col xs:space-y-16 md:space-y-24 lg:space-y-20 pt-20 md:pt-36 pb-20">
-            <div className="flex flex-col md:flex-row justify-around items-center px-10 space-y-20 md:pl-10 md:space-y-36 md:px-0 lg:items-start lg:space-y-0 2xl:items-center">
+        <div className="bg-light-peach h-full flex flex-col pt-20 space-y-10 xs:space-y-16 md:space-y-24 md:pt-0 lg:pt-36 lg:space-y-20">
+            <div className="flex flex-col md:flex-row justify-around items-center px-10 space-y-6 xs:space-y-20 md:pl-10 md:space-y-36 md:px-0 lg:items-start lg:space-y-0 2xl:items-center">
                 <div className="rounded-t-full overflow-hidden">
                     <div className="h-auto w-[350px] xs:w-[360px] md:w-56 lg:w-[350px] xl:w-96 2xl:w-auto">
                         <Image
-                            src={"https://images.squarespace-cdn.com/content/v1/63560ba563f3f90767df932c/affc3dd5-cab6-4c9b-bf00-e78e5e69208e/Frame+3-1.jpg?format=2500w"}
+                            src={"/images/review-section-1.jpg"}
                             alt="review-1"
                             width={420}
                             height={630}
@@ -49,7 +49,7 @@ export default function ReviewSection(){
                     />
                 </div>
             </div>
-            <div className="flex flex-col-reverse md:flex-row justify-around items-center px-10 md:pl-10 md:px-0 lg:items-start 2xl:items-start pb-52">
+            <div className="flex flex-col-reverse md:flex-row justify-around items-center px-10 pb-20 md:pl-10 md:px-0 lg:items-start lg:pb-0 2xl:items-start">
                 <div>
                     <TopSection
                         title="And innovative people leaders"
@@ -72,7 +72,7 @@ export default function ReviewSection(){
                 <div className="relative rounded-t-full overflow-hidden pb-10 md:pb-0">
                     <div className="h-auto w-[350px] xs:w-[360px] md:w-56 lg:w-[350px] xl:w-96 2xl:w-auto">
                         <Image
-                            src={"https://images.squarespace-cdn.com/content/v1/63560ba563f3f90767df932c/61db9366-82f1-43a7-b3bc-072cb70253f3/Frame+3.jpg?format=2500w"}
+                            src={"/images/review-section-2.jpg"}
                             alt="review-2"
                             width={420}
                             height={400}

@@ -12,11 +12,11 @@ export default function FooterSection(){
         <div className={`bg-light-peach flex justify-between pt-6 font-semibold pb-8 pl-6 pr-8 xs:pb-16 xs:pl-10 xs:pr-8 sm:pl-12 md:pl-10 md:pr-10 md:pb-2 lg:pr-20 lg:pl-14 lg:pb-3 xl:pl-20 xl:pr-40 xl:pb-4 2xl:pt-10 2xl:pb-6 ${dmSansFont.className}`}>
             <div className="flex flex-col space-y-10 xs:space-y-10 sm:space-y-16 md:space-y-14 lg:space-y-12 xl:space-y-14">
                 <Image
-                    src={"https://images.squarespace-cdn.com/content/v1/63560ba563f3f90767df932c/0dbe9630-e839-41f7-bcf7-1b57644c514d/Learna+Logo-Black.png?format=300w"}
+                    src={"/images/logo.png"}
                     alt="footer-logo"
                     width={120}
                     height={40}
-                    className="mt-8 pb-28 xs:w-40 xs:mt-6 xs:pb-32 sm:pb-24 md:pb-0 md:w-14 md:mt-4 lg:w-20 lg:mt-4 xl:w-28 xl:mt-6 2xl:w-32"
+                    className="mt-8 pb-28 xs:w-40 xs:mt-6 xs:pb-32 sm:pb-24 md:pb-0 md:w-20 md:mt-4 lg:w-24 lg:mt-4 xl:w-28 xl:mt-6 2xl:w-32"
                 />
                 <div className="flex flex-col space-y-4 tracking-tight text-sm w-80 xs:text-[13.5px] xs:w-[420px] sm:text-sm sm:w-[525px] md:mt-0 md:text-[15px] md:w-[280px] lg:text-base lg:w-[370px] xl:w-[450px] 2xl:w-[550px]">
                     <div>Learna wishes to acknowledge the Traditional Custodians of the land on which we work and gather, Naarm (Melbourne, Australia), on Wurundjeri Woi Wurrung Country. </div>
