@@ -32,7 +32,7 @@ export default function HeroSection(){
             <div>
                 <Image
                     className="absolute top-[310px] left-0 xs:left-[7vw] sm:left-[20vw] w-[400px] md:top-[50vh] md:left-[50vw] md:w-[340px] lg:top-[40vh] lg:left-[48vw] lg:w-[480px] xl:static xl:w-[600px] 2xl:w-[650px] h-auto"
-                    src={"https://images.squarespace-cdn.com/content/v1/63560ba563f3f90767df932c/774c0669-a9de-4d04-9218-48b9e7bb7370/Learna+Hero.png?format=1500w"}
+                    src={"/images/hero-section-image.png"}
                     alt="explore-section-on-app"
                     width={670}
                     height={659}

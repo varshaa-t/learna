@@ -33,7 +33,7 @@ export default function Navbar(){
             <div className={`hidden xl:flex justify-between items-center px-11 pt-11`}>
                 <Link href={"/"}>
                     <Image
-                        src={"https://images.squarespace-cdn.com/content/v1/63560ba563f3f90767df932c/0dbe9630-e839-41f7-bcf7-1b57644c514d/Learna+Logo-Black.png?format=1500w"}
+                        src={"/images/navbar-logo.png"}
                         alt="logo"
                         width={177}
                         height={48}
@@ -59,7 +59,7 @@ export default function Navbar(){
                     <Link href={"/"}>
                         <div className="w-[120px] md:w-auto md:h-auto">
                             <Image
-                                src={"https://images.squarespace-cdn.com/content/v1/63560ba563f3f90767df932c/0dbe9630-e839-41f7-bcf7-1b57644c514d/Learna+Logo-Black.png?format=1500w"}
+                                src={"/images/navbar-logo.png"}
                                 alt="logo"
                                 width={177}
                                 height={48}
@@ -78,7 +78,7 @@ export default function Navbar(){
                     <div className="flex justify-end items-center">
                         <Link href={"/"}>
                             <Image
-                                src={"https://images.squarespace-cdn.com/content/v1/63560ba563f3f90767df932c/0dbe9630-e839-41f7-bcf7-1b57644c514d/Learna+Logo-Black.png?format=1500w"}
+                                src={"/images/navbar-logo.png"}
                                 alt="logo"
                                 width={177}
                                 height={48}

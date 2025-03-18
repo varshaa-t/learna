@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function AboutSection(){
 
     return (
-        <div className="bg-light-peach pt-24 flex flex-col space-y-32 pb-16 xs:pb-32">
+        <div className="bg-light-peach pt-24 flex flex-col pb-0 space-y-14 xs:space-y-20 xs:pb-2 sm:pb-4 md:pb-32 lg:space-y-28 2xl:pb-24">
             <div className="xs:px-6 sm:px-10">
                 <TopSection
                     title="On-demand learning for in-demand skills"
@@ -12,10 +12,10 @@ export default function AboutSection(){
                     variant="center"
                 />
             </div>
-            <div className="flex flex-col md:flex-row justify-evenly items-center lg:items-start xl:items-center space-x-0 md:space-x-20 lg:space-x-0 px-8 sm:px-0 md:px-20 2xl:px-0 space-y-12">
+            <div className="flex flex-col justify-evenly items-center space-x-0 px-8 space-y-6 sm:px-0 md:px-20 md:flex-row md:space-x-20 lg:space-y-0 lg:space-x-0 lg:items-start xl:items-center 2xl:px-0">
                 <div className="w-80 xs:w-96 xl:w-[460px] 2xl:w-[550px] h-auto">
                     <Image
-                        src={"https://images.squarespace-cdn.com/content/v1/63560ba563f3f90767df932c/99c968a1-ec92-4be5-999e-bf35efca0d49/Content.png?format=1500w"}
+                        src={"/images/about-section-image.png"}
                         alt="lessons"
                         width={543}
                         height={543}
