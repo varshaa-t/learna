@@ -10,12 +10,12 @@ export default function HeroSection(){
 
     return (
         <div className="bg-tertiary-orange border-b-2 border-black flex flex-col md:flex-row md:items-end md:justify-between 
-                        pt-24 pl-6 pb-44 sm:pl-10 sm:pt-28 sm:pb-44 md:pl-20 md:pt-24 md:pb-36
+                        pt-24 pl-6 pb-36 xs:pb-48 sm:pl-10 sm:pt-28 md:pl-20 md:pt-24 md:pb-36
                         lg:pl-24 lg:pt-28 lg:pb-40 xl:pt-20 xl:pl-32 xl:pr-16 xl:pb-40 2xl:pl-36 2xl:pt-20 2xl:pr-20 2xl:pb-44"
         >
             <div className="flex flex-col justify-between space-y-24 md:space-y-5 lg:space-y-6 2xl:space-y-20">
                 <div className="flex flex-col space-y-[450px] md:space-y-5 lg:space-y-16">
-                    <div className={`flex flex-col text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[65px] space-y-7 md:space-y-8 lg:space-y-7 ${manropeFont.className}`}>
+                    <div className={`flex flex-col text-3xl xs:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[65px] space-y-7 md:space-y-8 lg:space-y-7 ${manropeFont.className}`}>
                         <div className="relative md:block w-72 md:w-52 lg:w-auto">Work smarter,</div>
                         <div className="w-80 lg:w-auto">not harder</div>
                     </div>

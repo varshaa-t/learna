@@ -55,7 +55,7 @@ export default function Navbar(){
                 </div>
             </div>
             {!isOpen && (
-                <div className="flex items-center justify-end pt-6 space-x-[19vw] px-6 sm:px-11 sm:space-x-[28vw] md:space-x-[28vw] sm:pt-10 md:pt-12 lg:pt-11 lg:space-x-[34vw] xl:hidden">
+                <div className="flex items-center justify-end pt-10 space-x-[19vw] px-4 xs:px-6 xs:space-x-[27vw] sm:px-11 sm:space-x-[28vw] md:space-x-[28vw] md:pt-12 lg:pt-11 lg:space-x-[34vw] xl:hidden">
                     <Link href={"/"}>
                         <div className="w-[120px] md:w-auto md:h-auto">
                             <Image
@@ -82,11 +82,12 @@ export default function Navbar(){
                                 alt="logo"
                                 width={177}
                                 height={48}
+                                className="w-[120px] md:w-auto md:h-auto"
                             />  
                         </Link>
                         <button 
                             onClick={toggleNavbar}
-                            className="block xl:hidden absolute top-8 right-8 sm:top-12 sm:right-10"
+                            className="block absolute right-8 sm:right-10 lg:top-14 xl:hidden"
                         >
                             {isOpen ? <CloseIcon size={28}/> : <MenuIcon/>}
                         </button>
