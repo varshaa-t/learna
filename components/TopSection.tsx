@@ -24,7 +24,7 @@ const textClasses = {
 export default function TopSection({title, text, variant}: TopSectionProps){
 
     return (
-        <div className={`${variantClasses[variant]} flex flex-col space-y-20 pb-20 md:space-y-6 md:pb-0`}>
+        <div className={`${variantClasses[variant]} flex flex-col space-y-20 pb-20 md:space-y-10 md:pb-0`}>
             <div className={`text-2xl xs:text-2xl sm:text-[27px] md:text-3xl lg:text-4xl xl:text-[42px] ${titleClasses[variant]} ${manropeFont.className}`}>{title}</div>
             <div className={`text-sm xs:text-sm sm:text-[15px] md:text-[15px] lg:text-base xl:text-[17px] font-semibold md:tracking-tight ${textClasses[variant]} ${dmSansFont.className}`}>{text}</div>
         </div>

@@ -30,7 +30,7 @@ export default function Navbar(){
 
     return (
         <nav className={`bg-tertiary-orange ${dmSansFont.className}`}>
-            <div className={`hidden xl:flex justify-between items-center px-11 pt-11`}>
+            <div className={`hidden md:flex justify-between items-center px-11 pt-11`}>
                 <Link href={"/"}>
                     <Image
                         src={"/images/logo.png"}
@@ -39,7 +39,7 @@ export default function Navbar(){
                         height={48}
                     />  
                 </Link>
-                <div className="hidden xl:flex items-center space-x-6">
+                <div className="hidden md:flex items-center space-x-6">
                     <Link href={'/'}>
                         <div className="font-semibold">
                             Home
@@ -55,7 +55,7 @@ export default function Navbar(){
                 </div>
             </div>
             {!isOpen && (
-                <div className="flex items-center justify-end pt-10 space-x-[19vw] px-4 xs:px-6 xs:space-x-[27vw] sm:px-11 sm:space-x-[28vw] md:space-x-[28vw] md:pt-12 lg:pt-11 lg:space-x-[34vw] xl:hidden">
+                <div className="flex items-center justify-end pt-10 space-x-[19vw] px-4 xs:px-6 xs:space-x-[27vw] sm:px-11 sm:space-x-[28vw] md:hidden md:space-x-[28vw] md:pt-12 lg:pt-11 lg:space-x-[34vw] xl:hidden">
                     <Link href={"/"}>
                         <div className="w-[120px] md:w-auto md:h-auto">
                             <Image

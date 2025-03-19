@@ -1,5 +1,14 @@
+"use client";
+
 import Profile from "@/components/Profile";
 import TopSection from "@/components/TopSection";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
+import ArrowButton from "@/components/ArrowButton";
+import LeftArrowIcon from "@/icons/LeftArrowIcon";
+import RightArrowIcon from "@/icons/RightArrowIcon";
 
 export default function IndustryExpertsSection(){
 
@@ -72,7 +81,7 @@ export default function IndustryExpertsSection(){
     ]
 
     return (
-        <div className="bg-primary-green flex flex-col pt-16 pb-12 space-y-12">
+        <div className="bg-primary-green flex flex-col -space-y-10 pt-16 pb-6 xs:pb-12 xs:pt-24 md:space-y-0 lg:space-y-12">
             <div>
                 <TopSection
                     title="Learn from the best in the business"
@@ -80,12 +89,41 @@ export default function IndustryExpertsSection(){
                     variant="center"
                 />
             </div>
-            <div className="flex justify-between pl-4 pr-14">
-                {experts.map((expert, index) => (
-                    <div key={index}>
-                        <Profile {...expert}/>
-                    </div>
-                ))}
+            <div className="flex justify-between space-x-2 sm:pl-4 sm:pr-8">
+                <Swiper
+                    grabCursor={true}
+                    breakpoints={{
+                        0: { slidesPerView: 1 },
+                        640: { slidesPerView: 2 },
+                        768: { slidesPerView: 3 },
+                        1024: { slidesPerView: 4 },
+                        1280: { slidesPerView: 6 }
+                    }}
+                    loop={true}
+                    modules={[Navigation]}
+                    navigation={{
+                        nextEl: '#right-arrow',
+                        prevEl: '#left-arrow'
+                    }}
+                >
+                    {experts.map((expert, index) => (
+                        <SwiperSlide key={index}>
+                            <Profile {...expert}/>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </div>
+            <div className="mx-auto flex space-x-5 sm:hidden pt-20">
+                <div id="left-arrow">
+                    <ArrowButton
+                        icon={<LeftArrowIcon/>}
+                    />
+                </div>
+                <div id="right-arrow">
+                    <ArrowButton
+                        icon={<RightArrowIcon/>}
+                    />
+                </div>
             </div>
         </div>
     )

@@ -8,7 +8,7 @@ interface InputProps{
 }
 
 const sizeClasses = {
-    "sm": "w-[295px]",
+    "sm": "w-40 xs:w-56 sm:w-64 md:w-40 lg:w-52 xl:w-[295px]",
     "lg": "w-full"
 }
 
