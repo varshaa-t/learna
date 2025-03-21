@@ -34,7 +34,8 @@ export default function HeroSection(){
         gsap.from(heroSectionTextRef.current, {
             opacity: 0,
             autoAlpha: 0,
-            duration: 1
+            duration: 1,
+            clipPath: "inset(0% 0% 10% 0%)"
         })
 
         gsap.from(heroSectionImageRef.current, {
@@ -47,7 +48,7 @@ export default function HeroSection(){
     }, []);
 
     useGSAP(() => {
-        if(!heroSectionButtonTwoRef.current) return ;
+        if(!heroSectionButtonOneRef.current || !heroSectionButtonTwoRef.current) return ;
 
         gsap.from([heroSectionButtonOneRef.current, heroSectionButtonTwoRef.current], {
             opacity: 0,

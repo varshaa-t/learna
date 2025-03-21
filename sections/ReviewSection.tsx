@@ -1,10 +1,45 @@
+"use client";
+
 import BulletPoint from "@/components/BulletPoint";
 import Line from "@/components/Line";
 import ReviewBox from "@/components/ReviewBox";
 import TopSection from "@/components/TopSection";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 import Image from "next/image";
+import { useRef } from "react";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function ReviewSection(){
+
+    const reviewSectionImageOneRef = useRef<HTMLImageElement | null>(null);
+    const reviewSectionImageTwoRef = useRef<HTMLImageElement | null>(null);
+
+    useGSAP(() => {
+        if(!reviewSectionImageOneRef.current || !reviewSectionImageTwoRef.current) return ;
+
+        gsap.from(reviewSectionImageOneRef.current, {
+            opacity: 0,
+            y: 200,
+            scrollTrigger: {
+                trigger: reviewSectionImageOneRef.current,
+                start: "top 80%"
+            }
+        })
+
+        gsap.from(reviewSectionImageTwoRef.current, {
+            opacity: 0,
+            y: 200,
+            scrollTrigger: {
+                trigger: reviewSectionImageTwoRef.current,
+                start: "top 80%"
+            }
+        })
+
+        ScrollTrigger.refresh();
+    }, []);
 
     return (
         <div className="bg-light-peach h-full flex flex-col pt-20 space-y-10 xs:space-y-16 md:space-y-24 md:pt-0 lg:pt-36 lg:space-y-20">
@@ -12,6 +47,7 @@ export default function ReviewSection(){
                 <div className="rounded-t-full overflow-hidden">
                     <div className="h-auto w-[350px] xs:w-[360px] md:w-56 lg:w-[350px] xl:w-96 2xl:w-auto">
                         <Image
+                            ref={reviewSectionImageOneRef}
                             src={"/images/review-section-1.jpg"}
                             alt="review-1"
                             width={420}
@@ -72,6 +108,7 @@ export default function ReviewSection(){
                 <div className="relative rounded-t-full overflow-hidden pb-10 md:pb-0">
                     <div className="h-auto w-[350px] xs:w-[360px] md:w-56 lg:w-[350px] xl:w-96 2xl:w-auto">
                         <Image
+                            ref={reviewSectionImageTwoRef}
                             src={"/images/review-section-2.jpg"}
                             alt="review-2"
                             width={420}

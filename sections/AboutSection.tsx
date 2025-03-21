@@ -1,7 +1,33 @@
+"use client";
+
 import TopSection from "@/components/TopSection";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 import Image from "next/image";
+import { useRef } from "react";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function AboutSection(){
+
+    const aboutSectionRef = useRef<HTMLDivElement | null>(null);
+
+    useGSAP(() => {
+        if(!aboutSectionRef.current) return ;
+
+        gsap.from(aboutSectionRef.current, {
+            y: 175,
+            opacity: 0,
+            autoAlpha: 0,
+            scrollTrigger: {
+                trigger: aboutSectionRef.current,
+                start: "top 90%"
+            }
+        })
+
+        ScrollTrigger.refresh();
+    }, []);
 
     return (
         <div className="bg-light-peach pt-24 flex flex-col pb-0 space-y-14 xs:space-y-20 xs:pb-2 sm:pb-4 md:pb-32 lg:space-y-28 2xl:pb-24">
@@ -13,7 +39,9 @@ export default function AboutSection(){
                 />
             </div>
             <div className="flex flex-col justify-evenly items-center space-x-0 px-8 space-y-6 sm:px-0 md:px-20 md:flex-row md:space-x-20 lg:space-y-0 lg:space-x-0 lg:items-start xl:items-center 2xl:px-0">
-                <div className="w-80 xs:w-96 xl:w-[460px] 2xl:w-[550px] h-auto">
+                <div 
+                    ref={aboutSectionRef}
+                    className="invisible w-80 xs:w-96 xl:w-[460px] 2xl:w-[550px] h-auto">
                     <Image
                         src={"/images/about-section-image.png"}
                         alt="lessons"
