@@ -40,11 +40,13 @@ function HeroSectionSlider() {
             start: "top 90%"
         }
     })
+
+    ScrollTrigger.refresh();
   }, []);
 
   return (
     <div ref={sliderContainerRef} className="bg-primary-green border-b-2 border-black overflow-hidden whitespace-nowrap">
-      <div ref={marqueeRef} className="flex space-x-16 text-6xl font-extralight py-4">
+      <div ref={marqueeRef} className="flex space-x-16 font-extralight text-4xl py-10 md:py-4 lg:text-5xl xl:text-6xl">
         <p>Learn, Grow, Engage.</p>
         <p>Learn, Grow, Engage.</p>
         <p>Learn, Grow, Engage.</p>

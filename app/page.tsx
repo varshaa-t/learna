@@ -6,6 +6,7 @@ import HeroSectionSlider from "@/sections/HeroSectionSlider";
 import IndustryExpertsSection from "@/sections/IndustryExpertsSection";
 import LinksSection from "@/sections/LinksSection";
 import ReviewSection from "@/sections/ReviewSection";
+import ReviewSectionSlider from "@/sections/ReviewSectionSlider";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <AboutSection/>
       <IndustryExpertsSection/>
       <ReviewSection/>
+      <ReviewSectionSlider/>
       <LinksSection/>
       <FooterSection/>
     </div>
