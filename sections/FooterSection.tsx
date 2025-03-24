@@ -61,7 +61,7 @@ export default function FooterSection(){
             delay: 1.2,
             scrollTrigger: {
                 trigger: footerTextRef.current,
-                start: "top 60%"
+                start: "top 70%"
             }
         })
 
