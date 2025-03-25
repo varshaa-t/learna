@@ -28,7 +28,7 @@ export default function FooterSection(){
         gsap.from(footerLogoRef.current, {
             opacity: 0,
             y: 50,
-            delay: 0.3,
+            delay: 0.2,
             scrollTrigger: {
                 trigger: footerLogoRef.current,
                 start: "top 60%"
@@ -38,7 +38,7 @@ export default function FooterSection(){
         gsap.from(socialsRef.current, {
             opacity: 0,
             y: 50,
-            delay: 0.6,
+            delay: 0.4,
             scrollTrigger: {
                 trigger: socialsRef.current,
                 start: "top 60%"
@@ -48,7 +48,7 @@ export default function FooterSection(){
         gsap.from(footerButtonRef.current, {
             opacity: 0,
             y: 50,
-            delay: 0.9,
+            delay: 0.6,
             scrollTrigger: {
                 trigger: footerButtonRef.current,
                 start: "top 60%"
@@ -58,10 +58,10 @@ export default function FooterSection(){
         gsap.from([footerTextRef.current, footerLinkRef.current], {
             opacity: 0,
             y: 50,
-            delay: 1.2,
+            delay: 0.8,
             scrollTrigger: {
                 trigger: footerTextRef.current,
-                start: "top 70%"
+                start: "top 80%"
             }
         })
 
